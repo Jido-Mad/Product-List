@@ -1,12 +1,35 @@
 @import "tailwindcss";
 
 @font-face {
-  font-family: "RedHatText";
+  font-family: "RedHatThin";
   src: url("./assets/fonts/static/RedHatText-Regular.ttf") format("truetype");
-  font-weight: 400; /* Regular */
-  font-style: normal;
+}
+
+@font-face {
+  font-family: "RedHatSemibold";
+  src: url("./assets/fonts/static/RedHatText-SemiBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RedHatBold";
+  src: url("./assets/fonts/static/RedHatText-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "RedHatItalic";
+  src: url("./assets/fonts/RedHatText-Italic-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "RedHat";
+  src: url("./assets/fonts/RedHatText-Regular.ttf") format("truetype");
 }
 
 @theme {
-  --font-redhat: "RedHatText", sans-serif;
+  --font-redhat: "RedHat", sans-serif;
+  --font-redhatthin: "RedHatThin", sans-serif;
+  --font-redhatsemibold: "RedHatSemibold", sans-serif;
+  --font-redhatbold: "RedHatBold", sans-serif;
+  --font-redhatitalic: "RedHatItalic", sans-serif;
 }
