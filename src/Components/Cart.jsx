@@ -18,7 +18,7 @@ function Cart() {
         </p>
       </div>
 
-      <div className="w-75">
+      <div className="hidden w-75">
         <h1 className=" flex font-redhatbold text-[hsl(14,86%,42%)] m-9 mb-4 md:text-2xl">
           {" "}
           Your Cart (7)
