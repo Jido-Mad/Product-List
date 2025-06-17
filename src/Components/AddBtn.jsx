@@ -10,9 +10,7 @@ function AddBtn() {
         <span className="font-redhatsemibold text-sm">Add to Cart</span>
       </div>
 
-      {/*   THIS IS THE UI FOR THE BUTTON AFTER ADD TO CART IS CLICKED
-       
-        <div className="hidden items-center justify-around absolute text-white bottom-[-20px] left-[50%] -translate-x-[50%] w-38 h-10 rounded-3xl  bg-[hsl(14,86%,42%)] border-1  border-[hsl(14,86%,42%)]  hover:cursor-pointer">
+      {/*      <div className="flex items-center justify-around absolute text-white bottom-[-20px] left-[50%] -translate-x-[50%] w-38 h-10 rounded-3xl  bg-[hsl(14,86%,42%)] border-1  border-[hsl(14,86%,42%)]  hover:cursor-pointer">
         <div className="h-5 w-5 inline-flex border border-white p-1 rounded-full">
           <img src="./icon-decrement-quantity.svg" alt="Decrement Logo" />
         </div>
@@ -21,8 +19,7 @@ function AddBtn() {
         <div className="h-5 w-5 inline-flex border border-white p-1 rounded-full">
           <img src="./icon-increment-quantity.svg" alt="Increment Logo" />
         </div>
-      </div>
-      */}
+      </div> */}
     </>
   );
 }
