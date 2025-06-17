@@ -1,7 +1,7 @@
 function Cart() {
   return (
     <>
-      <div className="bg-white flex flex-col justify-center items-center w-85 pl-2 pb-6">
+      <div className="bg-white flex flex-col justify-center rounded-lg items-center w-85 pl-2 pb-6 lg:mt-6">
         <div className="w-full">
           <h1 className=" flex justify-start font-redhatbold text-[hsl(14,86%,42%)] text-xl text-left p-4 mb-8">
             {" "}
@@ -19,7 +19,7 @@ function Cart() {
       </div>
 
       <div className="hidden w-75">
-        <h1 className=" flex font-redhatbold text-[hsl(14,86%,42%)] p-4 mb-8 md:text-2xl">
+        <h1 className=" flex font-redhatbold rounded-lg text-[hsl(14,86%,42%)] p-4 mb-8 md:text-2xl">
           {" "}
           Your Cart (7)
         </h1>
