@@ -1,7 +1,7 @@
 function Cart() {
   return (
     <>
-      <div className="bg-white flex flex-col justify-center rounded-lg items-center w-85 pl-2 pb-6 lg:mt-6">
+      <div className="bg-white flex flex-col justify-center rounded-lg items-center w-85 pl-2 pb-6 lg:mt-8">
         <div className="w-full">
           <h1 className=" flex justify-start font-redhatbold text-[hsl(14,86%,42%)] text-xl text-left p-4 mb-8">
             Your Cart (0)
