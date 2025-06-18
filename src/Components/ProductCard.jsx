@@ -3,10 +3,10 @@ import AddBtn from "./AddBtn.jsx";
 const ProductCard = ({ product }) => {
   return (
     <div className="my-6">
-      <div className="relative">
+      <div className="relative max-w-[400px]">
         <AddBtn />
         <img
-          src={product.image.mobile}
+          src={product.image.desktop}
           alt={product.name}
           className="rounded-lg mb-10"
         />

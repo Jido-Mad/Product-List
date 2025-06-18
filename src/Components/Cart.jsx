@@ -4,7 +4,6 @@ function Cart() {
       <div className="bg-white flex flex-col justify-center rounded-lg items-center w-85 pl-2 pb-6 lg:mt-6">
         <div className="w-full">
           <h1 className=" flex justify-start font-redhatbold text-[hsl(14,86%,42%)] text-xl text-left p-4 mb-8">
-            {" "}
             Your Cart (0)
           </h1>
         </div>
@@ -20,7 +19,6 @@ function Cart() {
 
       <div className="hidden w-75">
         <h1 className=" flex font-redhatbold rounded-lg text-[hsl(14,86%,42%)] p-4 mb-8 md:text-2xl">
-          {" "}
           Your Cart (7)
         </h1>
         <div className="flex flex-col gap-5">
@@ -115,10 +113,10 @@ function Cart() {
             className="w-4 h-4"
           />
           <p className="font-redhat text-[12px] text-center tracking-wide text-[hsl(12,20%,44%)]">
-            This is a{" "}
+            This is a
             <span className="font-redhatsemibold text-[hsl(14,65%,9%)]">
               carbon-neutral
-            </span>{" "}
+            </span>
             delivery
           </p>
         </div>
