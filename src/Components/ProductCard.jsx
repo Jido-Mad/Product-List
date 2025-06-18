@@ -1,15 +1,32 @@
 import AddBtn from "./AddBtn.jsx";
+import { useState, useEffect } from "react";
 
 const ProductCard = ({ product }) => {
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleSize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleSize);
+
+    return () => {
+      window.removeEventListener("resize", handleSize);
+    };
+  }, []);
+
+  function getImage() {
+    if (windowWidth < 640) return product.image.mobile;
+    if (windowWidth < 1024) return product.image.tablet;
+    return product.image.desktop;
+  }
+
   return (
     <div className="my-6">
       <div className="relative max-w-[400px]">
         <AddBtn />
-        <img
-          src={product.image.desktop}
-          alt={product.name}
-          className="rounded-lg mb-10"
-        />
+        <img src={getImage()} alt={product.name} className="rounded-lg mb-10" />
       </div>
       <h3 className="text-sm font-redhatthin text-[hsl(12,20%,44%)]">
         {product.category}
