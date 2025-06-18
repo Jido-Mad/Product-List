@@ -17,14 +17,14 @@ function QuantityBtn() {
   return (
     <>
       {count > 0 ? (
-        <div className="flex items-center justify-around absolute text-white bottom-[-20px] left-[50%] -translate-x-[50%] w-38 md:w-42 h-10 rounded-3xl  bg-[hsl(14,86%,42%)] border-1  border-[hsl(14,86%,42%)]  hover:cursor-pointer">
+        <div className="flex items-center justify-around absolute text-white bottom-[-20px] left-[50%] -translate-x-[50%] w-38 md:w-42 h-10 rounded-3xl  bg-[hsl(14,86%,42%)] border-1  border-[hsl(14,86%,42%)] hover:cursor-default">
           <div onClick={decrement}>
-            <HiMiniMinus className="size-[25px] border rounded-full p-0.5 hover:bg-white hover:border-white hover:text-[hsl(14,86%,42%)]" />
+            <HiMiniMinus className="size-[25px] border rounded-full p-0.5 hover:bg-white hover:border-white hover:text-[hsl(14,86%,42%)] hover:cursor-pointer" />
           </div>
 
           <span className="font-redhatsemibold text-sm">{count}</span>
           <div onClick={increment}>
-            <HiMiniPlus className="size-[25px] border rounded-full p-0.5 hover:bg-white hover:border-white hover:text-[hsl(14,86%,42%)]" />
+            <HiMiniPlus className="size-[25px] border rounded-full p-0.5 hover:bg-white hover:border-white hover:text-[hsl(14,86%,42%)] hover:cursor-pointer" />
           </div>
         </div>
       ) : (
