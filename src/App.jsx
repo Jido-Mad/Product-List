@@ -3,7 +3,7 @@ import Cart from "./Components/Cart";
 
 function App() {
   return (
-    <div className="bg-[hsl(20,50%,98%)] flex flex-col items-center justify-center mb-4 lg:flex-row lg:items-start lg:justify-center lg:gap-10">
+    <div className="bg-[hsl(20,50%,98%)] flex flex-col items-center justify-center mb-4 lg:flex-row lg:items-start lg:justify-center lg:gap-10 pt-14">
       <Products />
       <Cart />
     </div>
