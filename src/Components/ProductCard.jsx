@@ -26,7 +26,11 @@ const ProductCard = ({ product }) => {
     <div className="my-6">
       <div className="relative max-w-[400px]">
         <AddBtn />
-        <img src={getImage()} alt={product.name} className="rounded-lg mb-10" />
+        <img
+          src={getImage()}
+          alt={product.name}
+          className="rounded-lg mb-10 select-none"
+        />
       </div>
       <h3 className="text-sm font-redhatthin text-[hsl(12,20%,44%)]">
         {product.category}
