@@ -65,11 +65,11 @@ function Cart() {
             className="w-4 h-4"
           />
           <p className="font-redhat text-[12px] text-center tracking-wide text-[hsl(12,20%,44%)]">
-            This is a&nbsp;
+            This is a
             <span className="font-redhatsemibold text-[hsl(14,65%,9%)]">
-              carbon-neutral
+              &nbsp;carbon-neutral&nbsp;
             </span>
-            &nbsp;delivery
+            delivery
           </p>
         </div>
 
