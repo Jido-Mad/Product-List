@@ -1,7 +1,8 @@
 function Cart() {
   return (
     <>
-      <div className="bg-white flex flex-col justify-center rounded-lg items-center w-[90%] sm:w-90 pb-6 my-6 lg:mr-4">
+      {/* empty cart */}
+      <div className=" hidden bg-white flex flex-col justify-center rounded-lg items-center w-[90%] sm:w-90 pb-6 my-6 lg:mr-4">
         <div className="w-full">
           <h1 className=" flex justify-start font-redhatbold text-[hsl(14,86%,42%)] text-xl text-left p-4 mb-8">
             Your Cart (0)
@@ -17,13 +18,14 @@ function Cart() {
         </p>
       </div>
 
-      <div className="hidden w-75">
-        <h1 className=" flex font-redhatbold rounded-lg text-[hsl(14,86%,42%)] p-4 mb-8 md:text-2xl">
+      {/* selected elements */}
+      <div className="w-75">
+        <h1 className=" flex font-redhatbold rounded-lg text-[hsl(14,86%,42%)] mb-8 md:text-xl">
           Your Cart (7)
         </h1>
         <div className="flex flex-col gap-5">
           <div className="flex justify-between items-center">
-            <div className="space-y-2 ml-9">
+            <div className="space-y-2">
               <p className="font-redhatsemibold text-[12px] text-gray-800">
                 Classic Tiramisu
               </p>
@@ -48,7 +50,7 @@ function Cart() {
             </div>
           </div>
           <div className="flex justify-between items-center">
-            <div className="space-y-2 ml-9">
+            <div className="space-y-2">
               <p className="font-redhatsemibold text-[12px] text-gray-800">
                 Vanilla Bean Crème Brûlée
               </p>
@@ -73,7 +75,7 @@ function Cart() {
             </div>
           </div>
           <div className="flex justify-between items-center">
-            <div className="space-y-2 ml-9">
+            <div className="space-y-2">
               <p className="font-redhatsemibold text-[12px] text-gray-800">
                 Vanilla Panna Cotta
               </p>
@@ -99,14 +101,14 @@ function Cart() {
           </div>
         </div>
 
-        <div className="flex justify-between items-center ml-9 mt-8">
+        <div className="flex justify-between items-center mt-8">
           <h3 className="font-redhatthin text-[12px] text-[hsl(14,65%,9%)]">
             Order Total
           </h3>
           <h1 className="font-redhatbold">$46.50</h1>
         </div>
 
-        <div className="flex ml-9 mt-8 justify-center items-center space-x-2">
+        <div className="flex mt-8 justify-center items-center space-x-2">
           <img
             src="./icon-carbon-neutral.svg"
             alt="icon remove item"
@@ -121,7 +123,7 @@ function Cart() {
           </p>
         </div>
 
-        <button className="flex font-redhatthin justify-center w-65 ml-9 mt-8 rounded-full bg-[hsl(14,86%,42%)] text-white text-center p-3">
+        <button className="flex font-redhatthin justify-center w-75 mt-8 rounded-full bg-[hsl(14,86%,42%)] text-white text-center p-3">
           Confirm Order
         </button>
       </div>
