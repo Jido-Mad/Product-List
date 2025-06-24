@@ -1,8 +1,7 @@
 import ProductCard from "./ProductCard";
-
 import data from "/data.json";
 
-const Products = () => {
+const Products = ({ addToCart }) => {
   return (
     <div className="p-6">
       <h1 className="text-4xl font-redhatbold mb-4 text-[hsl(14,65%,9%))]">
@@ -13,6 +12,7 @@ const Products = () => {
           <ProductCard
             key={`${product.name}-${product.category}`}
             product={product}
+            addToCart={addToCart}
           />
         ))}
       </div>

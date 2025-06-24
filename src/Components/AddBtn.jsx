@@ -1,11 +1,14 @@
 import { useState } from "react";
 import QuantityBtn from "./QuantityBtn.jsx";
 
-function AddBtn() {
+function AddBtn({ addToCart }) {
   const [showQuantity, setShowQuantity] = useState(false);
 
   function handleShowQuantity() {
     setShowQuantity(!showQuantity);
+    if (!showQuantity) {
+      addToCart();
+    }
   }
 
   return (

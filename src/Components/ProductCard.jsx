@@ -1,7 +1,7 @@
 import AddBtn from "./AddBtn.jsx";
 import { useState, useEffect } from "react";
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product, addToCart }) => {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ const ProductCard = ({ product }) => {
   return (
     <div className="my-6">
       <div className="relative max-w-[400px]">
-        <AddBtn />
+        <AddBtn addToCart={() => addToCart(product)} />
         <img
           src={getImage()}
           alt={product.name}
